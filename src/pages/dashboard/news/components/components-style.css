@@ -1,0 +1,59 @@
+.edit__modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.edit__modal .edit__modal__content {
+  width: 40%;
+  min-width: 270px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  gap: 10px;
+}
+.edit__modal .edit__modal__content h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+.edit__modal .edit__modal__content input,
+.edit__modal .edit__modal__content textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+.edit__modal .edit__modal__content textarea {
+  height: 120px;
+}
+.edit__modal .edit__modal__content .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.edit__modal .edit__modal__content .button-container button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  float: right !important;
+  transition: 0.3s;
+}
+.edit__modal .edit__modal__content .button-container button:hover {
+  background-color: #217425;
+}/*# sourceMappingURL=components-style.css.map */

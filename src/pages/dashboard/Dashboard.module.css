@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #7da886;
+  color: #fff;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard__title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  font-size: 16px;
+  position: relative;
+}
+
+.navbar__link::before {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust this value to control the thickness of the line */
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust this value to control the thickness of the line */
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar__link:hover::before {
+  width: 100%;
+}
+
+.body {
+  padding: 20px 0px;
+}/*# sourceMappingURL=Dashboard.module.css.map */
