@@ -12,7 +12,7 @@ const Auth = () => {
 
   function loginUser(e){
     e.preventDefault();
-    axios.post("http://localhost:9000/api/user/sign-in", {
+    axios.post("https://api.tasksforwork.uz/api/user/sign-in", {
       username: username,
       password: userPassword
     })

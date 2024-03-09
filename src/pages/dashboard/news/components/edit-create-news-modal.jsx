@@ -9,7 +9,7 @@ const EditCreateNewsModal = ({ id, headers, modalType, modalTitle }) => {
     const updateNews = () => {
         if(!title && !description) return alert('Please fill changing fields.');
         axios
-            .patch(`http://localhost:9000/api/news/${id}`,
+            .patch(`https://api.tasksforwork.uz/api/news/${id}`,
                 {
                     title,
                     description
@@ -26,7 +26,7 @@ const EditCreateNewsModal = ({ id, headers, modalType, modalTitle }) => {
     const createNews = () => {
         if(!title || !description) return alert('Please fill all fields.');
         axios
-            .post('http://localhost:9000/api/news',
+            .post('https://api.tasksforwork.uz/api/news',
                 {
                     title,
                     description

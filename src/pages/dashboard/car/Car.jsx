@@ -17,7 +17,7 @@ const Car = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:9000/api/car', { headers })
+      .get('https://api.tasksforwork.uz/api/car', { headers })
       .then((response) => {
         setCars(response.data);
         setLoading(false);
@@ -36,7 +36,7 @@ const Car = () => {
 
     if (confirmDelete) {
       axios
-        .delete(`http://localhost:9000/api/car/${id}`, { headers })
+        .delete(`https://api.tasksforwork.uz/api/car/${id}`, { headers })
         .then(() => {
           alert('Car has been deleted!');
           setCars((prevCars) => prevCars.filter((car) => car.id !== id));

@@ -18,7 +18,7 @@ const EditCreateCarModal = ({ id, headers, modalType, modalTitle }) => {
 
     const updateCar = () => {
         axios
-            .patch(`http://localhost:9000/api/car/${id}`,
+            .patch(`https://api.tasksforwork.uz/api/car/${id}`,
                 {
                     model,
                     year,
@@ -40,7 +40,7 @@ const EditCreateCarModal = ({ id, headers, modalType, modalTitle }) => {
     const createCar = () => {
         if (!model || !year || !color || !type || !price || !image || !description) return alert('Please fill all fields.');
         axios
-            .post('http://localhost:9000/api/car',
+            .post('https://api.tasksforwork.uz/api/car',
                 {
                     model,
                     year,

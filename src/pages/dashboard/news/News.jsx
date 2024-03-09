@@ -16,7 +16,7 @@ const News = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:9000/api/news')
+      .get('https://api.tasksforwork.uz/api/news')
       .then((response) => {
         setNews(response.data);
       })
@@ -30,7 +30,7 @@ const News = () => {
     
     if (confirmDelete) {
       axios
-        .delete(`http://localhost:9000/api/news/${id}`, { headers })
+        .delete(`https://api.tasksforwork.uz/api/news/${id}`, { headers })
         .then(() => {
           alert('News has been deleted!');
           setNews((prevNews) => prevNews.filter((news) => news.id !== id));
